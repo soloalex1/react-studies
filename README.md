@@ -1,2 +1,2 @@
 # react-studies
-Estudos e práticas em React.js
+Repositório de estudos e construção de aplicações web utilizando o framework [React](https://reactjs.org/).
