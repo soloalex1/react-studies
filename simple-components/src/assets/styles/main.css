@@ -17,3 +17,31 @@ header {
     text-align: center;
     padding-bottom: 2.5%;
 }
+
+h1 {
+    width: 60%;
+    display: inline-block;
+}
+
+nav {
+    border: 1px solid salmon;
+    width: 50%;
+    height: 45%;
+    margin: 0 auto;  
+}
+
+/* wip */
+
+ul {
+    width: 50%;
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    border: 1px solid purple;
+}
+
+li {
+    float: right;
+    margin: 0 10%;
+}
