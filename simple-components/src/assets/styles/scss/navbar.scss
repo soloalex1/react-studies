@@ -1,0 +1,22 @@
+nav {
+    border: 1px solid salmon;
+    width: 50%;
+    height: 45%;
+    margin: 0 auto;  
+
+    ul {
+        width: 50%;
+        position: fixed;
+        list-style-type: none;
+        margin: 0;
+        display: flex;
+        border: 1px solid purple;
+
+        li {
+            float: right;
+            margin: 0 10%;
+        }
+    }
+}
+
+/* wip */

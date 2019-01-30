@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
-
 class Navbar extends Component {
 
-    // pesquisar sobre a necessidade de um construtor - aqui não precisa
+    // só é preciso ter um construtor quando se mexe com estados ou quando faz binding de métodos
     // pesquisar sobre a relação entre os props passados e a renderização dos mesmos
     constructor(props, name, ...labels){
         super(props);
@@ -19,7 +18,7 @@ class Navbar extends Component {
                 <h1>{this.props.name}</h1>
                 <nav>
                     <ul>
-                        { this.props.menuLabels.map(i => {return <li>{i}</li>}) }
+                        { this.props.menuLabels.map(i => {return <li><a href="#">{i}</a></li>}) }
                     </ul>
                 </nav>
             </header>
