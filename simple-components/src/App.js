@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 // import Navbar from './components/Navbar'
 import Comment from './components/Comment';
 
-import './assets/styles/css/main.css';
+import './assets/styles/scss/_base.scss';
 
 class App extends Component {
 
@@ -17,7 +17,7 @@ class App extends Component {
 
   author = {
     name: 'alexandre machado',
-    avatarUrl: './assets/images/Doppelsoeldner.png'
+    avatarUrl: require('./assets/images/Doppelsoeldner.png')
   }
 
   render() {
