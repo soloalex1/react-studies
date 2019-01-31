@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-class Header extends Component {
+// com export default direto, pra ficar mais organizadinho
+export default class Header extends Component {
 
     // props recebe os parâmetros na tag, daquele jeitinho lá
     // não mexi no state por enquanto, não é preciso
@@ -17,5 +18,3 @@ class Header extends Component {
         )
     }
 }
-
-export default Header;

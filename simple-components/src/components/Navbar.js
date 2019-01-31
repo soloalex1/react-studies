@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Navbar extends Component {
+export default class Navbar extends Component {
 
     // só é preciso ter um construtor quando se mexe com estados ou quando faz binding de métodos
     // pesquisar sobre a relação entre os props passados e a renderização dos mesmos
@@ -25,5 +25,3 @@ class Navbar extends Component {
         );
     }
 }
-
-export default Navbar;

@@ -8,7 +8,7 @@ import './assets/styles/scss/_base.scss';
 
 class App extends Component {
 
-  myName = 'alexandre machado'
+  myName = 'Alexandre Machado'
   menuLinks = [
     'início',
     'projetos',

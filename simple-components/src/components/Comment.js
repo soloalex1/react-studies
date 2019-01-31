@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 
-class Comment extends Component {
+export default class Comment extends Component {
 
     constructor(props, author, text, date){
         super(props);
@@ -23,11 +23,11 @@ class Comment extends Component {
                     <img className="avatar" src={this.props.author.avatarUrl} alt={this.props.author.name}/>
                     <span className="userinfo-name"> {this.props.author.name}</span>
                 </div>
-                <div className="comment-text">{this.props.text}</div>
-                <div className="comment-date">{this.props.date}</div>
+                <div class="comment-content">
+                    <span className="comment-text">{this.props.text}</span>
+                    <span className="comment-date">{this.props.date}</span>
+                </div>
             </div>
         );
     }
 }
-
-export default Comment;

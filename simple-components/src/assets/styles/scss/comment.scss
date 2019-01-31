@@ -1,0 +1,39 @@
+.comment {
+    width: max-content;
+    height: 10%;
+    // border: 1px solid violet;
+    display: flex;
+
+    .user-info {
+        font-weight: bold;
+        border: 1px solid red;
+
+        .avatar {
+            width: 32px;
+            height: 32px;
+            // border: 1px solid black;
+            border-radius: 50%;
+        }
+
+        .userinfo-name {
+            text-transform: capitalize;
+        }
+    }
+
+    .comment-content {
+        width: 58%;
+        display: flex;
+        align-items: flex-end;
+
+
+
+        .comment-text {
+            font-size: 12px;
+        }
+    
+        .comment-date {
+            font-size: 10px;
+            color: gray;
+        }
+    }
+}
