@@ -1,6 +1,10 @@
 // componente padrão para um comentário, como nos exemplos do reactjs.org
 
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
+
+const PropTypes = PropTypes;
+
 
 export default class Comment extends Component {
 
@@ -30,4 +34,10 @@ export default class Comment extends Component {
             </div>
         );
     }
+}
+
+Comment.propTypes = {
+    author: PropTypes.object,
+    text: PropTypes.string,
+    date: PropTypes.date
 }
