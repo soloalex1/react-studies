@@ -7,7 +7,7 @@ export default class Clock extends Component {
         this.state = { date: new Date() }
     }
 
-    // métodos de ciclo de vida
+    // exemplo sobre métodos de ciclo de vida
 
     // chamado após a montagem (construção) do componente
     componentDidMount() {
@@ -23,6 +23,7 @@ export default class Clock extends Component {
     }
 
     tick(){
+        // não se altera o estado diretamente
         this.setState({
             date: new Date()
         });
