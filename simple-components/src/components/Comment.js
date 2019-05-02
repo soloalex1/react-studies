@@ -36,8 +36,23 @@ export default class Comment extends Component {
     }
 }
 
+// validando props
 Comment.propTypes = {
-    author: PropTypes.object,
-    text: PropTypes.string,
-    date: PropTypes.date
+    author: PropTypes.exact({
+        name: PropTypes.string.isRequired,
+        avatarUrl: PropTypes.string.isRequired
+    }).isRequired,
+    text: PropTypes.string.isRequired,
+    date: PropTypes.date.isRequired
+}
+
+// propriedades default
+
+Comment.defaultProps = {
+    author: {
+        name: "Anônimo",
+        avatarUrl: "https://cdn3.iconfinder.com/data/icons/solidix-toys/128/toy_children-15-512.png"
+    },
+    text: "blablabla",
+    date: new Date()
 }
