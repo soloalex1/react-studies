@@ -1,0 +1,12 @@
+{
+  "name": "react-ninja",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Alexandre Machado",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "1",
+    "webpack-dev-server": "1"
+  }
+}
