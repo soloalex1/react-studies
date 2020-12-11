@@ -1,8 +1,10 @@
+'use strict'
+
 import React from 'react'
 
-const App = React.createClass({
+var App = React.createClass({
 	render: function () {
-		return <div>Aplicação</div>
+		return <h1>Aplicação</h1>
 	},
 })
 

@@ -1,10 +1,10 @@
 'use strict'
 
 const webpack = require('webpack')
-const webpackDevServer = require('webpack-dev-server')
+const WebpackDevServer = require('webpack-dev-server')
 const config = require('./webpack.config')
 
-new webpackDevServer(webpack(config), {
+new WebpackDevServer(webpack(config), {
 	publicPath: config.output.publicPath,
 	hot: true,
 	historyApiFallback: true,
@@ -14,5 +14,5 @@ new webpackDevServer(webpack(config), {
 		return console.log(err)
 	}
 
-	console.log('Executando em http://localhost:3000...')
+	console.log('Listening on http://localhost:3000')
 })
