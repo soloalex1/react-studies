@@ -4,16 +4,30 @@ import React from 'react'
 import LikeButton from './like-button'
 import Square from './square'
 import Title from './title'
+import Timer from './timer'
+import Button from './button'
 
 class App extends React.Component {
+	constructor() {
+		super()
+		this.state = {
+			time: 0,
+			showTimer: true,
+		}
+	}
+
 	render() {
 		return (
 			<div className="container">
 				<Title />
-				<LikeButton>children</LikeButton>
-				{['blue', 'red', 'green'].map((color, index) => (
-					<Square color={color} key={index} onClick={() => alert('clicou')} />
-				))}
+				{this.state.showTimer && <Timer />}
+				<Button
+					handleClick={() =>
+						this.setState({ showTimer: !this.state.showTimer })
+					}
+				>
+					Toggle timer
+				</Button>
 			</div>
 		)
 	}
