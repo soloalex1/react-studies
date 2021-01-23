@@ -1,5 +1,11 @@
 import React from 'react'
 
-export default function Button({ children, handleClick }) {
-	return <button onClick={handleClick}>{children}</button>
+const Button = ({ children, handleClick }) => {
+  return <button onClick={handleClick}>{children}</button>
 }
+
+Button.propTypes = {
+  handleClick: React.PropTypes.func,
+}
+
+export default Button
