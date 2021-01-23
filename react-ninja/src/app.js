@@ -8,29 +8,29 @@ import Timer from './timer'
 import Button from './button'
 
 class App extends React.Component {
-	constructor() {
-		super()
-		this.state = {
-			time: 0,
-			showTimer: true,
-		}
-	}
+  constructor() {
+    super()
+    this.state = {
+      time: 0,
+      showTimer: true,
+    }
+  }
 
-	render() {
-		return (
-			<div className="container">
-				<Title />
-				{this.state.showTimer && <Timer />}
-				<Button
-					handleClick={() =>
-						this.setState({ showTimer: !this.state.showTimer })
-					}
-				>
-					Toggle timer
-				</Button>
-			</div>
-		)
-	}
+  render() {
+    return (
+      <div className="container">
+        <Title />
+        {this.state.showTimer && <Timer />}
+        <Button
+          handleClick={() =>
+            this.setState({ showTimer: !this.state.showTimer })
+          }
+        >
+          Toggle timer
+        </Button>
+      </div>
+    )
+  }
 }
 
 export default App
